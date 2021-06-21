@@ -1,5 +1,5 @@
-import * as search from './search'
+import * as home from './home'
 
 export default {
-  ...search,
+  ...home,
 }
