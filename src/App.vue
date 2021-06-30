@@ -1,5 +1,4 @@
 <template>
-  <div class="left-nav"></div>
   <LeftNav class="left-nav"></LeftNav>
   <router-view class="content" />
 </template>
@@ -28,5 +27,6 @@ export default defineComponent({
   -webkit-box-sizing: border-box;
   margin-left: 60px;
   width: calc(100vw - 60px);
+  height: 100vh;
 }
 </style>

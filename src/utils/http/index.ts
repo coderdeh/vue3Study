@@ -10,6 +10,7 @@ function decorateService(service: AxiosInstance) {
   service.interceptors.request.use(
     // 请求配置
     (config: AxiosRequestConfig) => {
+      config.headers.Authorization = 'deh'
       return config
     },
     (error: AxiosError) => {

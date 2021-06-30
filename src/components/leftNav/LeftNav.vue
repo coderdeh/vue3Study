@@ -38,6 +38,7 @@ export default defineComponent({
 <style lang="less" scoped>
 .nav {
   width: 60px;
+  height: 100vh;
   .itemnav {
     width: 60px;
     height: 160px;

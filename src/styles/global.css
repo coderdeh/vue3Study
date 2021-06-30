@@ -1,6 +1,15 @@
 /* 
   定义全局样式
 */
+html,body{
+  width: 100vw;
+  height: 100vh;
+  /* 解决因多次点击，字体or图片背景变色的问题 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .el-form-item__label{
   display: none;
 }
