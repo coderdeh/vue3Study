@@ -63,6 +63,16 @@
 
 - [官方文档](https://www.tailwindcss.cn/docs)
 
+  [Echarts]https://echarts.apache.org
+  [vCharts]https://zizorg.github.io/v-charts
+  [印记中国]https://docschina.org
+  [测试接口，网上找的]https://www.showdoc.com.cn/128719739414963/2513235043485226
+  [防抖节流]https://segmentfault.com/a/1190000018428170
+  [lodash]https://www.lodashjs.com
+  [vue3]https://www.vue3js.cn
+  
+
+
 - **配置**
   - 文件：tailwind.config.js
   - 如：可以设置常用的颜色变量，用于主题色。
