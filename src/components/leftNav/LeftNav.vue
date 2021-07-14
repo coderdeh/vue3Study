@@ -1,21 +1,37 @@
 <template>
   <ul class="flex flex-col justify-around items-center nav h-screen bg-red-50">
-    <li class="itemnav flex flex-col justify-center items-center">
+    <li
+      class="itemnav flex flex-col justify-center items-center"
+      :class="{ itemActive: currentNav === 1 }"
+      @click="switchNav(1)"
+    >
       <img src="~assets/images/nav/home.png" alt="" />
       <p class="txt text-fs14 text-center text-light">首页</p>
     </li>
 
-    <li class="itemnav flex flex-col justify-center items-center">
+    <li
+      class="itemnav flex flex-col justify-center items-center"
+      :class="{ itemActive: currentNav === 2 }"
+      @click="switchNav(2)"
+    >
       <img src="~assets/images/nav/category.png" alt="" />
       <p class="txt text-fs14 text-center text-light">分类</p>
     </li>
 
-    <li class="itemnav flex flex-col justify-center items-center">
+    <li
+      class="itemnav flex flex-col justify-center items-center"
+      :class="{ itemActive: currentNav === 3 }"
+      @click="switchNav(3)"
+    >
       <img src="~assets/images/nav/car.png" alt="" />
       <p class="txt text-fs14 text-center text-light">购物车</p>
     </li>
 
-    <li class="itemnav flex flex-col justify-center items-center">
+    <li
+      class="itemnav flex flex-col justify-center items-center"
+      :class="{ itemActive: currentNav === 4 }"
+      @click="switchNav(4)"
+    >
       <img src="~assets/images/nav/mine.png" alt="" />
       <p class="txt text-fs14 text-center text-light">我的</p>
     </li>
@@ -27,9 +43,18 @@ import { defineComponent, reactive, toRefs } from 'vue'
 
 export default defineComponent({
   setup() {
-    const state = reactive({})
+    const state = reactive({
+      currentNav: 1,
+    })
+
+    // Methods
+    function switchNav(val: number) {
+      state.currentNav = val
+    }
+
     return {
       ...toRefs(state),
+      switchNav,
     }
   },
 })

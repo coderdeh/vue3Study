@@ -1,0 +1,12 @@
+ 安装vite   
+npm install -g create-vite-app
+
+ 创建Vue3项目   
+create-vite-app projectName
+cd projectName
+npm run dev
+
+引入vue-router
+查看 vue-router 版本： npm info vue-router versions
+安装最新版 vue-router：npm install vue-router@4.0.6
+

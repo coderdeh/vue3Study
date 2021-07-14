@@ -11,10 +11,11 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "echarts": "^5.1.2",
     "element-plus": "^1.0.2-beta.41",
     "less": "^4.1.1",
-    "sass": "^1.32.13",
     "normalize.css": "^8.0.1",
+    "sass": "^1.32.13",
     "vue": "^3.0.5",
     "vue-router": "^4.0.6",
     "vuex": "^4.0.0"
