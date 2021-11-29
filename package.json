@@ -6,6 +6,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "lint-staged": "lint-staged",
+    "lint": "eslint --ext .js,.vue src --fix",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "prepare": "husky install"
   },

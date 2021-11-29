@@ -19,7 +19,7 @@ module.exports = {
     // 函数最大深度
     'max-depth': ['error', 4],
     // 函数最大行数
-    'max-lines-per-function': ['error', 50],
+    'max-lines-per-function': ['error', 100],
     // 文件最大行数
     'max-lines': ['error', 500],
     // 是否允许debugger
